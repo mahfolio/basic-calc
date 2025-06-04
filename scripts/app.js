@@ -16,3 +16,30 @@ function divide(a, b) {
     }
     return a / b;
 }
+
+// function calculate(operation, a, b) {
+//     switch (operation) {
+//         case 'add':
+//             return add(a, b);
+//         case 'subtract':
+//             return subtract(a, b);
+//         case 'multiply':
+//             return multiply(a, b);
+//         case 'divide':
+//             return divide(a, b);
+//         default:
+//             throw new Error("Unknown operation");
+//     }
+// }
+
+// function main() {
+//     try {
+//         console.log("Addition: ", calculate('add', 5, 3));
+//         console.log("Subtraction: ", calculate('subtract', 5, 3));
+//         console.log("Multiplication: ", calculate('multiply', 5, 3));
+//         console.log("Division: ", calculate('divide', 5, 0));
+//     } catch (error) {
+//         console.error(error.message);
+//     }
+// }
+// main();
