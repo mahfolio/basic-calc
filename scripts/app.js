@@ -17,6 +17,12 @@ function divide(a, b) {
     return a / b;
 }
 
+let operator;
+let number;
+let anotherNumber;
+
+
+
 // function calculate(operation, a, b) {
 //     switch (operation) {
 //         case 'add':
