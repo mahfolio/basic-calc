@@ -21,6 +21,21 @@ let operator;
 let number;
 let anotherNumber;
 
+function operate(operator, a, b) {
+    switch (operator) {
+        case 'add':
+            return add(a, b);
+        case 'subtract':
+            return subtract(a, b);
+        case 'multiply':
+            return multiply(a, b);
+        case 'divide':
+            return divide(a, b);
+        default:
+            throw new Error("Unknown operator");
+    }
+}
+
 
 
 // function calculate(operation, a, b) {
