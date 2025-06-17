@@ -3,6 +3,9 @@ let secondNumber = '';
 let currentOperator = '';
 let result = '';
 
+
+
+// ALL FUNCTIONS
 function add(a, b) {
     return a + b;
 }
