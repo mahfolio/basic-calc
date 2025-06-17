@@ -1,3 +1,8 @@
+let firstNumber = '';
+let secondNumber = '';
+let currentOperator = '';
+let result = '';
+
 function add(a, b) {
     return a + b;
 }
@@ -16,10 +21,6 @@ function divide(a, b) {
     }
     return a / b;
 }
-
-let operator;
-let number;
-let anotherNumber;
 
 function operate(operator, a, b) {
     switch (operator) {
