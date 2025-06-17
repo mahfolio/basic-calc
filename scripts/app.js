@@ -22,7 +22,7 @@ function divide(a, b) {
     return a / b;
 }
 
-function operate(operator, a, b) {
+function calculate(operator, a, b) {
     switch (operator) {
         case 'add':
             return add(a, b);
