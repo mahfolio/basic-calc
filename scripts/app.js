@@ -2,7 +2,8 @@ let firstNumber = '';
 let secondNumber = '';
 let currentOperator = '';
 let result = '';
-
+const display = document.querySelector('.display');
+const buttons = document.querySelectorAll('button');
 
 
 // ALL FUNCTIONS
