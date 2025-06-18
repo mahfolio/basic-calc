@@ -11,3 +11,19 @@ main {
   height: 100vh;
   background-color: #f0f0f0;
 }
+
+.calculator {
+  width: 20%;
+  height: 50vh;
+  min-width: 20rem;
+  background-color: rgb(15, 53, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+
+/* .display {
+  width: 95%;
+  background-color: white;
+} */
