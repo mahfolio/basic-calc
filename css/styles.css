@@ -52,5 +52,5 @@ button {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  /* display: block; */
+  background-color: #a1a5a1;
 }
