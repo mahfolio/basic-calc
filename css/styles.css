@@ -13,9 +13,6 @@ main {
 }
 
 .calculator {
-  width: 100px;
-  height: 50vh;
-  min-width: 20rem;
   background-color: rgb(15, 53, 130);
   display: flex;
   flex-direction: column;
