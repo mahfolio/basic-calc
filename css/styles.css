@@ -13,7 +13,7 @@ main {
 }
 
 .calculator {
-  width: 20%;
+  width: 100px;
   height: 50vh;
   min-width: 20rem;
   background-color: rgb(15, 53, 130);
@@ -49,5 +49,12 @@ main {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* display: block; */
 }
