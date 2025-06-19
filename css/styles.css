@@ -53,4 +53,11 @@ button {
   height: 5rem;
   border-radius: 50%;
   background-color: #a1a5a1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f3f3f3;
+}
+
+.light-font {
+  font-weight: 100;
 }
