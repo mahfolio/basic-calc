@@ -46,3 +46,8 @@ main {
 .calc-items-width {
     width: 97%;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
