@@ -46,7 +46,7 @@ main {
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 button {
