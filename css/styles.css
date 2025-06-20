@@ -32,6 +32,7 @@ main {
   align-items: center;
   justify-content: flex-end;
   font-size: 4rem;
+  color: #f3f3f3;
 }
 
 .calc-btn {
