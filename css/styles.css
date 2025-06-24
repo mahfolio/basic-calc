@@ -51,17 +51,26 @@ main {
 .row {
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.3rem 0 0.3rem;
 }
 
 button {
-  width: 4rem;
-  height: 4rem;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background-color: #696868;
   font-size: 1.5rem;
   font-weight: 700;
   color: #f3f3f3;
+  text-align: center;
 }
+
+button:active {
+  background-color: #e4e5e4;
+}
+
+
 
 .light-font {
   font-weight: 100;
@@ -74,3 +83,6 @@ button {
 .orange-btn {
   background-color: #ff9800;
 }
+
+
+
