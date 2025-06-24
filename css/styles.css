@@ -80,6 +80,10 @@ button:active {
   font-weight: 100;
 }
 
+.operator-size {
+  font-size: 1.8rem;
+}
+
 .light-btn-color {
   background-color: #9e9e9e;
 }
