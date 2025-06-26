@@ -5,6 +5,22 @@ let result = '';
 const display = document.querySelector('.display');
 const buttons = document.querySelectorAll('button');
 
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        let buttonText = button.innerText;
+
+        if (buttonText === 'AC') {
+            firstNumber = '';
+            secondNumber = '';
+            currentOperator = '';
+            result = '';
+            display.innerText = '0';
+        } else {
+            firstNumber += buttonText;
+            display.innerText = firstNumber;
+        }
+    });
+});
 
 // ALL FUNCTIONS
 function add(a, b) {
@@ -40,32 +56,3 @@ function calculate(operator, a, b) {
             throw new Error("Unknown operator");
     }
 }
-
-
-
-// function calculate(operation, a, b) {
-//     switch (operation) {
-//         case 'add':
-//             return add(a, b);
-//         case 'subtract':
-//             return subtract(a, b);
-//         case 'multiply':
-//             return multiply(a, b);
-//         case 'divide':
-//             return divide(a, b);
-//         default:
-//             throw new Error("Unknown operation");
-//     }
-// }
-
-// function main() {
-//     try {
-//         console.log("Addition: ", calculate('add', 5, 3));
-//         console.log("Subtraction: ", calculate('subtract', 5, 3));
-//         console.log("Multiplication: ", calculate('multiply', 5, 3));
-//         console.log("Division: ", calculate('divide', 5, 0));
-//     } catch (error) {
-//         console.error(error.message);
-//     }
-// }
-// main();
