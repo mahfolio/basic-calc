@@ -67,6 +67,7 @@ button {
   font-weight: 700;
   color: #f3f3f3;
   text-align: center;
+  cursor: pointer;
 }
 
 button:active {
