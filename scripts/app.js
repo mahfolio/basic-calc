@@ -15,17 +15,22 @@ buttons.forEach(button => {
             currentOperator = '';
             result = '';
             display.innerText = '0';
-        } else if ((buttonText === '=' && firstNumber && secondNumber) || (firstNumber && secondNumber && 
-            (buttonText === '+' || 
-            buttonText === '-' || 
-            buttonText === 'x' || 
-            buttonText === '÷'))) {
-                result = calculate(currentOperator, Number(firstNumber), Number(secondNumber));
-                display.innerText = result;
-                firstNumber = result.toString();
-                secondNumber = '';
-                currentOperator = buttonText;
-        } else {
+        } else if ((buttonText === '=' && firstNumber && secondNumber) || (firstNumber && secondNumber &&
+            (buttonText === '+' ||
+                buttonText === '-' ||
+                buttonText === 'x' ||
+                buttonText === '÷'))) {
+            result = calculate(currentOperator, Number(firstNumber), Number(secondNumber));
+            display.innerText = result;
+            firstNumber = result.toString();
+            secondNumber = '';
+            currentOperator = buttonText;
+        } else if (isNaN(buttonText)) {
+            operator = buttonText;
+            // display.innerText = '';
+            // display.innerText = operator;
+        }
+        else {
             firstNumber += buttonText;
             display.innerText = firstNumber;
         }
@@ -37,7 +42,7 @@ function add(a, b) {
     return a + b;
 }
 
-function subtract (a, b) {
+function subtract(a, b) {
     return a - b;
 }
 
