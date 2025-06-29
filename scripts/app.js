@@ -26,10 +26,10 @@ buttons.forEach(button => {
             secondNumber = '';
             currentOperator = buttonText;
         } else if (isNaN(buttonText)) {
-            operator = buttonText;
+            currentOperator = buttonText;
             // display.innerText = '';
             // display.innerText = operator;
-        } else if (firstNumber && operator) {
+        } else if (firstNumber && currentOperator) {
             secondNumber += buttonText;
             display.innerText = secondNumber;
             // } else if (result) {
@@ -44,7 +44,7 @@ buttons.forEach(button => {
             if (result) {
                 firstNumber = '';
                 secondNumber = '';
-                operator = '';
+                currentOperator = '';
                 result = '';
                 display.innerText = '';
             }
@@ -76,13 +76,13 @@ function divide(a, b) {
 
 function calculate(operator, a, b) {
     switch (operator) {
-        case 'add':
+        case '+':
             return add(a, b);
-        case 'subtract':
+        case '-':
             return subtract(a, b);
-        case 'multiply':
+        case 'x':
             return multiply(a, b);
-        case 'divide':
+        case '÷':
             return divide(a, b);
         default:
             throw new Error("Unknown operator");
