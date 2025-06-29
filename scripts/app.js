@@ -29,12 +29,14 @@ buttons.forEach(button => {
             operator = buttonText;
             // display.innerText = '';
             // display.innerText = operator;
-        }
-        else {
-            firstNumber += buttonText;
-            display.innerText = firstNumber;
-        }
-    });
+        } else if (firstNumber && operator) {
+            secondNumber += buttonText;
+            display.innerText = secondNumber;
+        }else {
+                firstNumber += buttonText;
+                display.innerText = firstNumber;
+            }
+        });
 });
 
 // ALL FUNCTIONS
