@@ -21,7 +21,7 @@ buttons.forEach(button => {
                 buttonText === 'x' ||
                 buttonText === '÷'))) {
             result = calculate(currentOperator, Number(firstNumber), Number(secondNumber));
-            display.innerText = result;
+            display.innerText = result.toFixed(2);
             firstNumber = result.toString();
             secondNumber = '';
             currentOperator = buttonText;
