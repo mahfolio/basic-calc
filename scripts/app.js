@@ -32,11 +32,26 @@ buttons.forEach(button => {
         } else if (firstNumber && operator) {
             secondNumber += buttonText;
             display.innerText = secondNumber;
-        }else {
-                firstNumber += buttonText;
-                display.innerText = firstNumber;
+            // } else if (result) {
+            //   firstNumber = '';
+            //   secondNumber = '';
+            //   operator = '';
+            //   result = '';
+            //   display.innerText = '';
+            //   firstNumber += buttonText;
+            //   display.innerText = firstNumber;
+        } else {
+            if (result) {
+                firstNumber = '';
+                secondNumber = '';
+                operator = '';
+                result = '';
+                display.innerText = '';
             }
-        });
+            firstNumber += buttonText;
+            display.innerText = firstNumber;
+        }
+    });
 });
 
 // ALL FUNCTIONS
