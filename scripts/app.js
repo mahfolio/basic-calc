@@ -25,7 +25,7 @@ buttons.forEach(button => {
             firstNumber = result.toString();
             secondNumber = '';
             currentOperator = buttonText;
-        } else if (isNaN(buttonText)) {
+        } else if (buttonText === '+' || buttonText === '-' || buttonText === 'x' || buttonText === '÷') {
             currentOperator = buttonText;
             // display.innerText = '';
             // display.innerText = operator;
