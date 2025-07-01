@@ -30,8 +30,21 @@ buttons.forEach(button => {
             // display.innerText = '';
             // display.innerText = operator;
         } else if (firstNumber && currentOperator) {
-            secondNumber += buttonText;
-            display.innerText = secondNumber;
+            if (buttonText === '.') {
+                if (!secondNumber.includes('.')) {
+                    secondNumber += buttonText;
+                    display.innerText = secondNumber;
+                    if (display.innerText[0] === '.') {
+                        display.innerText = '0' + secondNumber;
+                    }
+                }
+            } else {
+                secondNumber += buttonText;
+                display.innerText = secondNumber;
+                if (display.innerText[0] === '.') {
+                    display.innerText = '0' + secondNumber;
+                }
+            }
             // } else if (result) {
             //   firstNumber = '';
             //   secondNumber = '';
