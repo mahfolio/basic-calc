@@ -48,8 +48,21 @@ buttons.forEach(button => {
                 result = '';
                 display.innerText = '';
             }
-            firstNumber += buttonText;
-            display.innerText = firstNumber;
+            if (buttonText === '.') {
+                if (!firstNumber.includes('.')) {
+                    firstNumber += buttonText;
+                    display.innerText = firstNumber;
+                    if (display.innerText[0] === '.') {
+                        display.innerText = '0' + firstNumber;
+                    }
+                }
+            } else {
+                firstNumber += buttonText;
+                display.innerText = firstNumber;
+                if (display.innerText[0] === '.') {
+                    display.innerText = '0' + firstNumber;
+                }
+            }
         }
     });
 });
