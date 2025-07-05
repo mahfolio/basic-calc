@@ -45,6 +45,13 @@ buttons.forEach(button => {
                     display.innerText = '0' + secondNumber;
                 }
             }
+            if (secondNumber === '0' && currentOperator === '÷') {
+                display.innerText = 'Undefined';
+                firstNumber = '';
+                secondNumber = '';
+                currentOperator = '';
+                result = '';
+            }
             // } else if (result) {
             //   firstNumber = '';
             //   secondNumber = '';
