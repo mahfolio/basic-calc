@@ -20,6 +20,13 @@ buttons.forEach(button => {
                 buttonText === '-' ||
                 buttonText === 'x' ||
                 buttonText === '÷'))) {
+            if (secondNumber === '0' && currentOperator === '÷') {
+                display.innerText = 'Undefined';
+                firstNumber = '';
+                secondNumber = '';
+                currentOperator = '';
+                result = '';
+            }
             result = calculate(currentOperator, Number(firstNumber), Number(secondNumber));
             display.innerText = result.toFixed(2);
             firstNumber = result.toString();
@@ -38,6 +45,9 @@ buttons.forEach(button => {
                         display.innerText = '0' + secondNumber;
                     }
                 }
+            } else if (buttonText === 'DEL') {
+                secondNumber = secondNumber.slice(0, -1);
+                display.innerText = secondNumber || '0';
             } else {
                 secondNumber += buttonText;
                 display.innerText = secondNumber;
@@ -45,13 +55,13 @@ buttons.forEach(button => {
                     display.innerText = '0' + secondNumber;
                 }
             }
-            if (secondNumber === '0' && currentOperator === '÷') {
-                display.innerText = 'Undefined';
-                firstNumber = '';
-                secondNumber = '';
-                currentOperator = '';
-                result = '';
-            }
+            // if (secondNumber === '0' && currentOperator === '÷') {
+            //     display.innerText = 'Undefined';
+            //     firstNumber = '';
+            //     secondNumber = '';
+            //     currentOperator = '';
+            //     result = '';
+            // }
             // } else if (result) {
             //   firstNumber = '';
             //   secondNumber = '';
@@ -76,6 +86,9 @@ buttons.forEach(button => {
                         display.innerText = '0' + firstNumber;
                     }
                 }
+            } else if (buttonText === 'DEL') {
+                firstNumber = firstNumber.slice(0, -1);
+                display.innerText = firstNumber || '0';
             } else {
                 firstNumber += buttonText;
                 display.innerText = firstNumber;
