@@ -20,8 +20,8 @@ h1 {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  height: 85vh;
 }
 
 .calculator {
